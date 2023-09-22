@@ -10,10 +10,5 @@
         "roave/security-advisories": "dev-latest"
     },
     "keywords": ["october", "cms", "announcement", "banner", "announcement bar", "notifications", "plugin"],
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Deividas\\Announcementbar\\": "plugins/tallpro/announcementbar"
-        }
-    }
+    "license": "MIT"
 }

@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/tallpro/announcementbar/models/banner/columns.yaml
+list: $/deividas/announcementbar/models/banner/columns.yaml
 
 # Model Class name
-modelClass: Tallpro\AnnouncementBar\Models\Banner
+modelClass: Deividas\AnnouncementBar\Models\Banner
 
 # List Title
 title: Manage Banners
 
 # Link URL for each record
-recordUrl: tallpro/announcementbar/banners/update/:id
+recordUrl: deividas/announcementbar/banners/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

@@ -6,25 +6,25 @@
 name: Banner
 
 # Model Form Field configuration
-form: $/tallpro/announcementbar/models/banner/fields.yaml
+form: $/deividas/announcementbar/models/banner/fields.yaml
 
 # Model Class name
-modelClass: Tallpro\AnnouncementBar\Models\Banner
+modelClass: Deividas\AnnouncementBar\Models\Banner
 
 # Default redirect location
-defaultRedirect: tallpro/announcementbar/banners
+defaultRedirect: deividas/announcementbar/banners
 
 # Create page
 create:
     title: backend::lang.form.create_title
-    redirect: tallpro/announcementbar/banners/update/:id
-    redirectClose: tallpro/announcementbar/banners
+    redirect: deividas/announcementbar/banners/update/:id
+    redirectClose: deividas/announcementbar/banners
 
 # Update page
 update:
     title: backend::lang.form.update_title
-    redirect: tallpro/announcementbar/banners
-    redirectClose: tallpro/announcementbar/banners
+    redirect: deividas/announcementbar/banners
+    redirectClose: deividas/announcementbar/banners
 
 # Preview page
 preview:

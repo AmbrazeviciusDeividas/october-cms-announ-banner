@@ -1,6 +1,6 @@
 <div data-control="toolbar">
     <a
-        href="<?= Backend::url('tallpro/announcementbar/banners/create') ?>"
+        href="<?= Backend::url('deividas/announcementbar/banners/create') ?>"
         class="btn btn-primary oc-icon-plus">
         <?= e(trans('backend::lang.list.create_button', ['name'=>'Banner'])) ?>
     </a>

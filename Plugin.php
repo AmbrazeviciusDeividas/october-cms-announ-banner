@@ -33,7 +33,7 @@ class Plugin extends PluginBase
     {
         return [
             'stylesheets' => [
-                '/plugins/tallpro/announcementbar/assets/css/admin.css'
+                '/plugins/deividas/announcementbar/assets/css/admin.css'
             ]
         ];
     }
@@ -53,7 +53,7 @@ class Plugin extends PluginBase
             // Adding custom CSS
             \Event::listen('backend.page.beforeDisplay', function($controller, $action, $params) {
                 if ($controller instanceof Banners) {
-                    $controller->addCss('/plugins/tallpro/announcementbar/assets/css/custom.css');
+                    $controller->addCss('/plugins/deividas/announcementbar/assets/css/custom.css');
                 }
             });
 
@@ -62,7 +62,7 @@ class Plugin extends PluginBase
                 'preview_banner' => [
                     'label' => '',
                     'type' => 'partial',
-                    'path' => '$/tallpro/announcementbar/partials/_banner_preview.htm',
+                    'path' => '$/deividas/announcementbar/partials/_banner_preview.htm',
                     'span' => 'full',
                     'cssClass' => 'preview-banner',
                     'tab' => 'Banner Preview' // this gives it its own tab in the secondary section
@@ -107,7 +107,7 @@ class Plugin extends PluginBase
 
     public function registerAssetFiles($controller)
     {
-        $controller->addJs('/plugins/tallpro/announcementbar/assets/js/jscolor.js');
+        $controller->addJs('/plugins/deividas/announcementbar/assets/js/jscolor.js');
     }
 
     /**
@@ -118,13 +118,13 @@ class Plugin extends PluginBase
         return [
             'announcementbar' => [
                 'label' => 'Announcement Bar',
-                'url' => Backend::url('tallpro/announcementbar/banners'),
+                'url' => Backend::url('deividas/announcementbar/banners'),
                 'icon' => 'icon-bullhorn',
                 'sideMenu' => [
                     'banners' => [
                         'label' => 'Banners',
                         'icon' => 'icon-copy',
-                        'url' => Backend::url('tallpro/announcementbar/banners'),
+                        'url' => Backend::url('deividas/announcementbar/banners'),
                     ],
                 ],
             ],

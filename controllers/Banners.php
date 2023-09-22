@@ -31,6 +31,6 @@ class Banners extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Tallpro.AnnouncementBar', 'announcementbar', 'banners');
-        $this->addCss('/plugins/tallpro/announcementbar-plugin/assets/css/admin.css');
+        $this->addCss('/plugins/deividas/announcementbar-plugin/assets/css/admin.css');
     }
 }
