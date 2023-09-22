@@ -20,8 +20,8 @@ class Plugin extends PluginBase
     {
         return [
             'name' => 'AnnouncementBar',
-            'description' => '',
-            'author' => 'Tallpro',
+            'description' => 'Announcement bar for your website, make it sticky and dynamic with various stylings',
+            'author' => 'Deividas',
             'icon' => 'icon-leaf'
         ];
     }
