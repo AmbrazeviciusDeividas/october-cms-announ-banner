@@ -1,0 +1,64 @@
+<div id="banner-preview" style="background-color: #ff0000; padding: 10px; margin-top: 20px;">
+    <span id="banner-preview-text" style="color: #000; display: inline-block;">Preview text here</span>
+    &nbsp;&nbsp;<a id="banner-preview-button" href="" style="display:inline-block; background-color: #333333; color: #FFFFFF;">Button</a>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        function updatePreview() {
+            let bgType = $('#Form-field-Banner-background_type').val();
+
+            if (bgType === 'single') {
+                // Single color
+                $('#banner-preview').css('background-color', $('#ColorPicker-formBannerColor-input-banner_color').val());
+            } else if (bgType === 'gradient') {
+                // Gradient
+                let color1 = $('#ColorPicker-formBannerGradientColor1-input-banner_gradient_color1').val();
+                let color2 = $('#ColorPicker-formBannerGradientColor2-input-banner_gradient_color2').val();
+                $('#banner-preview').css('background', 'linear-gradient(to right, ' + color1 + ', ' + color2 + ')');
+            }
+
+            // Text
+            $('#banner-preview-text').text($('#Form-field-Banner-text').val());
+
+            // Text and Banner color, alignment, font weight, size
+            let stylesForText = {
+                'text-align': $('#Form-field-Banner-alignment').val(),
+                'padding': $('#Form-field-Banner-paddingVertical').val() + 'px ' + $('#Form-field-Banner-paddingHorizontal').val() + 'px'
+            };
+            let contentStyling = {
+                'color': $('#ColorPicker-formTextColor-input-text_color').val(),
+                'text-align': $('#Form-field-Banner-alignment').val(),
+                'font-weight': $('#Form-field-Banner-fontWeight').val(),
+                'font-size': $('#Form-field-Banner-fontSize').val() + 'px',
+                'padding': $('#Form-field-Banner-paddingVertical').val() + 'px ' + $('#Form-field-Banner-paddingHorizontal').val() + 'px'
+            };
+            $('#banner-preview').css(stylesForText);
+            $('#banner-preview-text').css(contentStyling);
+
+            // Button styles: bg color, text color, border, padding, border-radius, href, font size and weight
+            let stylesForButton = {
+                'background-color': $('#ColorPicker-formButtonBgColor-input-button_bg_color').val(),
+                'color': $('#ColorPicker-formButtonTextColor-input-button_text_color').val(),
+                'border': '1px solid ' + $('#ColorPicker-formButtonBorderColor-input-button_border_color').val(),
+                'border-radius': $('#Form-field-Banner-button_border_radius').val() + 'px',
+                'padding': $('#Form-field-Banner-button_spacing_vertical').val() + 'px ' + $('#Form-field-Banner-button_spacing_horizontal').val() + 'px',
+                'font-size': $('#Form-field-Banner-button_font_size').val() + 'px',
+                'font-weight': $('#Form-field-Banner-button_font_weight').val()
+            };
+            $('#banner-preview-button').css(stylesForButton);
+            $('#banner-preview-button').attr('href', $('#Form-field-Banner-button_url').val());
+            $('#banner-preview-button').text($('#Form-field-Banner-button_text').val());
+        }
+
+        // Initialize preview
+        updatePreview();
+
+        // Attach event listeners to update preview on input changes
+        $('#Form-field-Banner-button_url, #Form-field-Banner-button_spacing_vertical, #Form-field-Banner-button_spacing_horizontal, #ColorPicker-formButtonTextColor-input-button_text_color, #ColorPicker-formButtonBorderColor-input-button_border_color, #Form-field-Banner-button_border_radius, #ColorPicker-formButtonBgColor-input-button_bg_color, #Form-field-Banner-paddingHorizontal, #Form-field-Banner-paddingVertical, #Form-field-Banner-text, #ColorPicker-formBannerColor-input-banner_color, #ColorPicker-formTextColor-input-text_color, #Form-field-Banner-alignment, #Form-field-Banner-fontWeight, #Form-field-Banner-fontSize, #Form-field-Banner-background_type, #ColorPicker-formBannerGradientColor1-input-banner_gradient_color1, #ColorPicker-formBannerGradientColor2-input-banner_gradient_color2, #Form-field-Banner-button_font_size, #Form-field-Banner-button_font_weight, #Form-field-Banner-button_text').on('input change', function () {
+            updatePreview();
+        });
+    });
+</script>
+

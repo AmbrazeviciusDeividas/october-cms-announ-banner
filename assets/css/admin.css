@@ -1,0 +1,8 @@
+.one-third-width {
+    width: calc(33.33% - 10px) !important; /* subtracting 10px for margins, adjust as necessary */
+    float: left; /* or use flexbox or other layout techniques */
+    margin-right: 10px;
+}
+#banner-preview-button:hover{
+    text-decoration: none;
+}

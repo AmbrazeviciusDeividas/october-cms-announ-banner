@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Banner
+
+# Model Form Field configuration
+form: $/tallpro/announcementbar/models/banner/fields.yaml
+
+# Model Class name
+modelClass: Tallpro\AnnouncementBar\Models\Banner
+
+# Default redirect location
+defaultRedirect: tallpro/announcementbar/banners
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: tallpro/announcementbar/banners/update/:id
+    redirectClose: tallpro/announcementbar/banners
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: tallpro/announcementbar/banners
+    redirectClose: tallpro/announcementbar/banners
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

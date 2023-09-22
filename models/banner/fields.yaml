@@ -1,0 +1,218 @@
+tabs:
+    fields:
+        background_type:
+            label: 'Background Type'
+            type: dropdown
+            options:
+                single: 'Single Color'
+                gradient: 'Gradient'
+            default: 'single'
+            tab: 'Banner Style'
+
+        banner_color:
+            label: 'Banner Color'
+            type: colorpicker
+            name: 'banner_bg_color'
+            showInput: true
+            default: '#000000'
+            trigger:
+                action: show
+                field: background_type
+                condition: value[single]
+            tab: 'Banner Style'
+
+        banner_gradient_color1:
+            label: 'Background Color 1'
+            type: colorpicker
+            span: left
+            name: 'banner_gradient_color1'
+            showInput: true
+            default: '#FF0000'
+            trigger:
+                action: show
+                field: background_type
+                condition: value[gradient]
+            tab: 'Banner Style'
+
+        banner_gradient_color2:
+            label: 'Background Color 2'
+            type: colorpicker
+            span: right
+            name: 'banner_gradient_color2'
+            showInput: true
+            default: '#0000FF'
+            trigger:
+                action: show
+                field: background_type
+                condition: value[gradient]
+            tab: 'Banner Style'
+
+        paddingVertical:
+            label: 'Padding Vertical (px)'
+            type: number
+            span: left
+            min: 0
+            max: 100
+            default: 10
+            tab: 'Banner Style'
+
+        paddingHorizontal:
+            label: 'Padding Horizontal (px)'
+            type: number
+            span: right
+            min: 0
+            max: 100
+            default: 10
+            tab: 'Banner Style'
+
+        text:
+            label: 'Content'
+            type: text
+            span: left
+            default: "Get 20% off today!"
+            tab: 'Content Style'
+        alignment:
+            label: 'Text Alignment'
+            type: dropdown
+            span: right
+            options:
+                left: 'Left'
+                right: 'Right'
+                center: 'Center'
+            default: 'center'
+            tab: 'Content Style'
+        text_color:
+            label: 'Text Color'
+            type: colorpicker
+            cssClass: 'one-third-width'
+            showInput: true
+            default: '#ffffff'
+            tab: 'Content Style'
+        fontWeight:
+            label: 'Font Weight'
+            type: dropdown
+            cssClass: 'one-third-width'
+            options:
+                100: '100 - Thin'
+                200: '200 - Extra Light'
+                300: '300 - Light'
+                400: '400 - Normal'
+                500: '500 - Medium'
+                600: '600 - Semi Bold'
+                700: '700 - Bold'
+                800: '800 - Extra Bold'
+                900: '900 - Black'
+            default: '400'
+            tab: 'Content Style'
+        fontSize:
+            label: 'Font Size (px)'
+            type: number
+            cssClass: 'one-third-width'
+            min: 12
+            max: 50
+            default: 16
+            tab: 'Content Style'
+        button_bg_color:
+            label: 'Button Background Color'
+            type: colorpicker
+            showInput: true
+            span: left
+            default: '#fff'
+            tab: 'Button Style'
+        button_text_color:
+            label: 'Button Text Color'
+            type: colorpicker
+            showInput: true
+            default: '#000'
+            tab: 'Button Style'
+            span: right
+        button_spacing_horizontal:
+            label: 'Button Spacing Horizontal (px)'
+            type: number
+            min: 0
+            span: left
+            max: 50
+            default: 10
+            tab: 'Button Style'
+        button_spacing_vertical:
+            label: 'Button Spacing Vertical (px)'
+            type: number
+            min: 0
+            max: 50
+            span: right
+            default: 3
+            tab: 'Button Style'
+        button_border_radius:
+            label: 'Button Border Radius'
+            type: number
+            min: 0
+            max: 50
+            span: left
+            default: 5
+            tab: 'Button Style'
+        button_url:
+            label: 'Button URL'
+            type: text
+            span: right
+            default: 'https://'
+            tab: 'Button Style'
+        button_font_size:
+            label: 'Font Size (px)'
+            type: number
+            cssClass: 'one-third-width'
+            min: 12
+            max: 50
+            default: 16
+            tab: 'Button Style'
+        button_font_weight:
+            label: 'Font Weight'
+            type: dropdown
+            cssClass: 'one-third-width'
+            options:
+                100: '100 - Thin'
+                200: '200 - Extra Light'
+                300: '300 - Light'
+                400: '400 - Normal'
+                500: '500 - Medium'
+                600: '600 - Semi Bold'
+                700: '700 - Bold'
+                800: '800 - Extra Bold'
+                900: '900 - Black'
+            default: '400'
+            tab: 'Button Style'
+        button_text:
+            label: 'Content'
+            type: text
+            cssClass: 'one-third-width'
+            default: 'Buy Now'
+            tab: 'Button Style'
+        name:
+            label: 'Banner Name'
+            type: text
+            default: "Banner"
+            tab: 'Settings'
+        status:
+            label: 'Status'
+            type: dropdown
+            span: left
+            options:
+                active: 'Active'
+                disabled: 'Disabled'
+                draft: 'Draft'
+            default: 'draft'
+            tab: 'Settings'
+        position:
+            label: 'Position'
+            type: dropdown
+            span: right
+            options:
+                top_sticky: 'Top Sticky'
+                not_sticky: 'Not Sticky'
+                bottom_sticky: 'Bottom Sticky'
+            default: 'not_sticky'
+            tab: 'Settings'
+        navigation_class:
+            label: 'Navigation Class'
+            type: text
+            default: ''
+            tab: 'Settings'

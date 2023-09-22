@@ -1,0 +1,20 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+    name:
+        label: 'Banner Name'
+        type: text
+        searchable: true
+    button_url:
+        label: 'Button URL'
+        type: text
+        searchable: true
+    status:
+        label: 'Status'
+        type: text
+        searchable: true
+    position:
+        label: 'Position'
+        type: text

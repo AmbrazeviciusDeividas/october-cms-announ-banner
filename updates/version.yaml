@@ -1,0 +1,15 @@
+v1.0.1: First version of AnnouncementBar
+v1.1.1:
+    - Update with a migration
+    - create_banners_table.php
+v1.2.1:
+    - Add Extra Fields To Database
+    - add_extra_fields_to_banners.php
+v1.3.1:
+    - Add Extra Fields To Database For Button
+    - add_extra_fields_to_banners_part2.php
+v1.4.1:
+    - Add Extra Fields To Database For Navigation Class
+    - add_extra_fields_to_banners_part3.php
+
+

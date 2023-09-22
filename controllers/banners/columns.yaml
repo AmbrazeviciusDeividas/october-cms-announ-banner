@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+    text:
+        label: 'Announcement Text'
+        type: text
+        searchable: true
+    banner_color:
+        label: 'Banner Color'
+        type: text
+    text_color:
+        label: 'Text Color'
+        type: text

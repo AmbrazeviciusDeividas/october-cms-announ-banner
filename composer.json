@@ -1,0 +1,19 @@
+{
+    "name": "deividas/announcementbar-plugin",
+    "type": "october-plugin",
+    "description": "Announcement Banner for October Websites - make it sticky or dynamic one",
+    "require": {
+        "composer/installers": "~1.0",
+        "php": ">=7.0.8"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "keywords": ["october", "cms", "announcement", "banner", "announcement bar", "notifications", "plugin"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tallpro\\Announcementbar\\": "plugins/tallpro/announcementbar"
+        }
+    }
+}
