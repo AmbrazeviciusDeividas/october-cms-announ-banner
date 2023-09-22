@@ -1,10 +1,10 @@
-<?php namespace Tallpro\AnnouncementBar;
+<?php namespace Deividas\AnnouncementBar;
 
 use Backend;
 use System\Classes\PluginBase;
-use Tallpro\AnnouncementBar\Components\AnnouncementBar;
-use Tallpro\AnnouncementBar\Controllers\Banners;
-use Tallpro\AnnouncementBar\Models\Banner;
+use Deividas\AnnouncementBar\Components\AnnouncementBar;
+use Deividas\AnnouncementBar\Controllers\Banners;
+use Deividas\AnnouncementBar\Models\Banner;
 
 /**
  * Plugin Information File

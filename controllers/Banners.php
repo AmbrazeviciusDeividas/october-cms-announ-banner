@@ -1,4 +1,4 @@
-<?php namespace Tallpro\AnnouncementBar\Controllers;
+<?php namespace Deividas\AnnouncementBar\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;

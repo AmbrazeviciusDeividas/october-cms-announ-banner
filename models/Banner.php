@@ -1,6 +1,6 @@
 <?php
 
-namespace Tallpro\AnnouncementBar\Models;
+namespace Deividas\AnnouncementBar\Models;
 
 use Model;
 

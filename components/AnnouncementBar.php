@@ -1,10 +1,9 @@
 <?php
 
-namespace Tallpro\AnnouncementBar\Components;
+namespace Deividas\AnnouncementBar\Components;
 
 use Cms\Classes\ComponentBase;
-use Tallpro\AnnouncementBar\FormWidgets\ColorPicker;
-use Tallpro\AnnouncementBar\Models\Banner;
+use Deividas\AnnouncementBar\Models\Banner;
 
 /**
  * StickyBar Component

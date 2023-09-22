@@ -1,4 +1,4 @@
-<?php namespace Tallpro\AnnouncementBar\Updates;
+<?php namespace Deividas\AnnouncementBar\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
