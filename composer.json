@@ -1,5 +1,5 @@
 {
-    "name": "deividas/announcementbar-plugin",
+    "name": "tallpro/announcementbar-plugin",
     "type": "october-plugin",
     "description": "Announcement Banner for October Websites - make it sticky or dynamic one",
     "require": {
