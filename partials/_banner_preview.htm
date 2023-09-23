@@ -8,9 +8,17 @@
     $(document).ready(function () {
         function updatePreview() {
             let bgType = $('#Form-field-Banner-background_type').val();
+            let button_enabled = $('#Form-field-Banner-button_enabled').val();
+
+            if(button_enabled == '0') {
+                $('#banner-preview-button').hide();
+            }
+            if(button_enabled == '1') {
+                $('#banner-preview-button').show();
+            }
 
             if (bgType === 'single') {
-                // Single color
+                $('#banner-preview').css('background', '');
                 $('#banner-preview').css('background-color', $('#ColorPicker-formBannerColor-input-banner_color').val());
             } else if (bgType === 'gradient') {
                 // Gradient
@@ -56,7 +64,7 @@
         updatePreview();
 
         // Attach event listeners to update preview on input changes
-        $('#Form-field-Banner-button_url, #Form-field-Banner-button_spacing_vertical, #Form-field-Banner-button_spacing_horizontal, #ColorPicker-formButtonTextColor-input-button_text_color, #ColorPicker-formButtonBorderColor-input-button_border_color, #Form-field-Banner-button_border_radius, #ColorPicker-formButtonBgColor-input-button_bg_color, #Form-field-Banner-paddingHorizontal, #Form-field-Banner-paddingVertical, #Form-field-Banner-text, #ColorPicker-formBannerColor-input-banner_color, #ColorPicker-formTextColor-input-text_color, #Form-field-Banner-alignment, #Form-field-Banner-fontWeight, #Form-field-Banner-fontSize, #Form-field-Banner-background_type, #ColorPicker-formBannerGradientColor1-input-banner_gradient_color1, #ColorPicker-formBannerGradientColor2-input-banner_gradient_color2, #Form-field-Banner-button_font_size, #Form-field-Banner-button_font_weight, #Form-field-Banner-button_text').on('input change', function () {
+        $('#Form-field-Banner-button_url, #Form-field-Banner-button_spacing_vertical, #Form-field-Banner-button_spacing_horizontal, #ColorPicker-formButtonTextColor-input-button_text_color, #ColorPicker-formButtonBorderColor-input-button_border_color, #Form-field-Banner-button_border_radius, #ColorPicker-formButtonBgColor-input-button_bg_color, #Form-field-Banner-paddingHorizontal, #Form-field-Banner-paddingVertical, #Form-field-Banner-text, #ColorPicker-formBannerColor-input-banner_color, #ColorPicker-formTextColor-input-text_color, #Form-field-Banner-alignment, #Form-field-Banner-fontWeight, #Form-field-Banner-fontSize, #Form-field-Banner-button_enabled, #Form-field-Banner-background_type, #ColorPicker-formBannerGradientColor1-input-banner_gradient_color1, #ColorPicker-formBannerGradientColor2-input-banner_gradient_color2, #Form-field-Banner-button_font_size, #Form-field-Banner-button_font_weight, #Form-field-Banner-button_text').on('input change', function () {
             updatePreview();
         });
     });

@@ -116,7 +116,7 @@ tabs:
             label: 'Button Background Color'
             type: colorpicker
             showInput: true
-            span: left
+            cssClass: 'one-third-width'
             default: '#fff'
             tab: 'Button Style'
         button_text_color:
@@ -125,7 +125,16 @@ tabs:
             showInput: true
             default: '#000'
             tab: 'Button Style'
-            span: right
+            cssClass: 'one-third-width'
+        button_enabled:
+            label: 'Visible Button?'
+            type: dropdown
+            cssClass: 'one-third-width'
+            options:
+                1: 'Visible'
+                0: 'Hidden'
+            default: '1'
+            tab: 'Button Style'
         button_spacing_horizontal:
             label: 'Button Spacing Horizontal (px)'
             type: number

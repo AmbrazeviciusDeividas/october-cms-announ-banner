@@ -50,6 +50,8 @@ class AnnouncementBar extends ComponentBase
             $this->page['button_font_weight'] = $selectedBanner->button_font_weight;
             $this->page['button_text'] = $selectedBanner->button_text;
             $this->page['navigation_class'] = $selectedBanner->navigation_class;
+            $this->page['button_enabled'] = $selectedBanner->button_enabled;
+
 
         }
     }

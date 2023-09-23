@@ -11,5 +11,8 @@ v1.3.1:
 v1.4.1:
     - Add Extra Fields To Database For Navigation Class
     - add_extra_fields_to_banners_part3.php
+v1.5.1:
+    - Add Extra Fields To Database For Button Settings
+    - add_extra_fields_to_banners_part4.php
 
 

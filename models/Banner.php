@@ -8,6 +8,13 @@ class Banner extends Model
 {
     protected $table = 'tallpro_announcementbar_banners';
 
+    public function beforeCreate()
+    {
+        if ($this->status === 'active') {
+            $this->status = 'active';
+        }
+    }
+
     protected $fillable = [
         'text',
         'banner_color',
@@ -32,7 +39,8 @@ class Banner extends Model
         'button_font_size',
         'button_font_weight',
         'button_text',
-        'navigation_class'
+        'navigation_class',
+        'button_enabled'
 
     ];
 }
