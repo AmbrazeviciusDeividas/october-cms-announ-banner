@@ -1,4 +1,5 @@
-<?php namespace Deividas\AnnouncementBar;
+<?php
+namespace Deividas\AnnouncementBar;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -51,7 +52,7 @@ class Plugin extends PluginBase
             }
 
             // Adding custom CSS
-            \Event::listen('backend.page.beforeDisplay', function($controller, $action, $params) {
+            \Event::listen('backend.page.beforeDisplay', function ($controller, $action, $params) {
                 if ($controller instanceof Banners) {
                     $controller->addCss('/plugins/deividas/announcementbar/assets/css/custom.css');
                 }
@@ -77,7 +78,6 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-
         return [
             AnnouncementBar::class => 'announcementBar',
         ];

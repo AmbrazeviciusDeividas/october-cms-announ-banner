@@ -9,6 +9,14 @@
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     },
-    "keywords": ["october", "cms", "announcement", "banner", "announcement bar", "notifications", "plugin"],
+    "keywords": [
+        "october",
+        "cms",
+        "announcement",
+        "banner",
+        "announcement bar",
+        "notifications",
+        "plugin"
+    ],
     "license": "MIT"
 }
