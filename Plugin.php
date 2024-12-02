@@ -21,7 +21,7 @@ class Plugin extends PluginBase
     {
         return [
             'name' => 'AnnouncementBar',
-            'description' => 'Announcement bar for your website, make it sticky and dynamic with various stylings',
+            'description' => 'Announcement Sticky bar for your website, make it sticky and dynamic with various stylings',
             'author' => 'Deividas',
             'icon' => 'icon-leaf'
         ];
@@ -125,6 +125,11 @@ class Plugin extends PluginBase
                         'label' => 'Banners',
                         'icon' => 'icon-copy',
                         'url' => Backend::url('deividas/announcementbar/banners'),
+                    ],
+                    'create_banner' => [
+                        'label' => 'Create New Banner',
+                        'icon' => 'icon-plus',
+                        'url' => Backend::url('deividas/announcementbar/banners/create'),
                     ],
                 ],
             ],

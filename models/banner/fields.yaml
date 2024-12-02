@@ -208,7 +208,7 @@ tabs:
                 active: 'Active'
                 disabled: 'Disabled'
                 draft: 'Draft'
-            default: 'draft'
+            default: 'active'
             tab: 'Settings'
         position:
             label: 'Position'
@@ -218,7 +218,7 @@ tabs:
                 top_sticky: 'Top Sticky'
                 not_sticky: 'Not Sticky'
                 bottom_sticky: 'Bottom Sticky'
-            default: 'not_sticky'
+            default: 'top_sticky'
             tab: 'Settings'
         navigation_class:
             label: 'Navigation Class'

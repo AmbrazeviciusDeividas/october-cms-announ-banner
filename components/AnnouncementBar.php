@@ -65,7 +65,6 @@ class AnnouncementBar extends ComponentBase
                 'type' => 'dropdown',
                 'options' => $this->getBannerOptions(),
             ],
-            // ... you can still have individual properties as fallback or for additional configuration.
         ];
     }
 
